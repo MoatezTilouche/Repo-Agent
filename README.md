@@ -2,7 +2,7 @@
 
 # 🤖 Repo Agent
 
-### *AI-powered repository documentation and test generation tool* ✨
+### _AI-powered repository documentation and test generation tool_ ✨
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-000000?style=for-the-badge&logo=ollama)](https://ollama.ai/)
@@ -12,7 +12,7 @@
 
 ---
 
-*Automatically generate professional README files, test suites, and development scripts for any GitHub repository using free, local LLMs (Ollama). No API costs, complete privacy.*
+_Automatically generate professional README files, test suites, and development scripts for any GitHub repository using free, local LLMs (Ollama). No API costs, complete privacy._
 
 </div>
 
@@ -25,6 +25,7 @@
 <td width="50%">
 
 ### 🎨 **Documentation Generation**
+
 - **Professional README.md** with stunning visual design
 - **HTML-enhanced layouts** with centered sections
 - **Smart badge generation** for tech stack
@@ -35,6 +36,7 @@
 <td width="50%">
 
 ### 🧪 **Test & Script Generation**
+
 - **Automated test suites** based on detected framework
 - **Development scripts** for common tasks
 - **Best-effort validation** with dependency installation
@@ -50,6 +52,7 @@
 ## 📦 Installation
 
 ### Prerequisites
+
 - **Python 3.8+**
 - **Ollama** (for local LLM inference)
 - **Git** (for repository cloning)
@@ -136,18 +139,21 @@ repo-agent/
 ## 🎯 Key Features Breakdown
 
 ### 🤖 **Smart Stack Detection**
+
 - **Auto-detects** programming language (Python, JavaScript/TypeScript, Go, Rust)
 - **Identifies** package managers (npm, yarn, pnpm, pip)
 - **Finds** test frameworks (pytest, Jest, etc.)
 - **Recognizes** monorepo structures
 
 ### 📝 **Context-Aware Generation**
+
 - **Analyzes** repository structure and code
 - **Extracts** dependencies, scripts, and key files
 - **Builds** comprehensive context for LLM
 - **Generates** accurate documentation based on actual code
 
 ### 🎨 **Professional README Templates**
+
 - **Centered headers** with HTML styling
 - **Badge generation** for tech stack
 - **Feature comparison tables** with split layouts
@@ -156,6 +162,7 @@ repo-agent/
 - **Collapsible sections** for detailed content
 
 ### ⚡ **Performance & Reliability**
+
 - **Timeout protection** (120s default for commands)
 - **Graceful error handling** for missing tools
 - **Windows compatibility** with shell=True
@@ -167,12 +174,14 @@ repo-agent/
 ## 🚀 Usage Examples
 
 ### Basic Usage
+
 ```bash
 # Generate documentation for a repository
 python -m src.main --repo https://github.com/username/repo --model llama3.1:8b
 ```
 
 ### Advanced Options
+
 ```bash
 # Custom workspace and model
 python -m src.main \
@@ -192,15 +201,15 @@ python -m src.main \
 
 ### CLI Arguments
 
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `--repo` | *required* | GitHub repository URL |
-| `--model` | `llama3.1:8b` | Ollama model name |
-| `--workspace` | `workspace` | Output directory |
-| `--max-files` | `40` | Max files to analyze |
-| `--max-bytes` | `120000` | Max context size |
-| `--no-scripts` | `false` | Skip script generation |
-| `--no-validate` | `false` | Skip validation |
+| Argument        | Default       | Description            |
+| --------------- | ------------- | ---------------------- |
+| `--repo`        | _required_    | GitHub repository URL  |
+| `--model`       | `llama3.1:8b` | Ollama model name      |
+| `--workspace`   | `workspace`   | Output directory       |
+| `--max-files`   | `40`          | Max files to analyze   |
+| `--max-bytes`   | `120000`      | Max context size       |
+| `--no-scripts`  | `false`       | Skip script generation |
+| `--no-validate` | `false`       | Skip validation        |
 
 ---
 
@@ -212,11 +221,13 @@ python -m src.main \
 ### Ollama Models
 
 **Recommended Models:**
+
 - **llama3.1:8b** — Best for general documentation (8GB RAM)
 - **deepseek-coder:6.7b** — Optimized for code (7GB RAM)
 - **codellama:7b** — Code-focused alternative (7GB RAM)
 
 **Pull additional models:**
+
 ```bash
 ollama pull llama3.1:8b
 ollama pull deepseek-coder:6.7b
@@ -233,6 +244,7 @@ export OLLAMA_HOST=http://localhost:11434
 ### Customizing Prompts
 
 Edit `src/llm/prompts.py` to customize:
+
 - **README_SYSTEM** — README generation template
 - **TESTS_SYSTEM** — Test generation rules
 - **SCRIPTS_SYSTEM** — Script generation rules
@@ -257,6 +269,7 @@ npm test  # or pytest, cargo test, etc.
 ## 🛠️ Development
 
 ### Setup Development Environment
+
 1. Clone the repository
 2. Create virtual environment: `python -m venv .venv`
 3. Activate: `.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (Unix)
@@ -264,6 +277,7 @@ npm test  # or pytest, cargo test, etc.
 5. Install Ollama and pull models
 
 ### Code Structure
+
 - **Modular design** — separate concerns (analysis, generation, ingestion)
 - **Type hints** — for better IDE support
 - **Error handling** — graceful failures with warnings
@@ -291,6 +305,7 @@ npm test  # or pytest, cargo test, etc.
 - 🔧 **Pull requests** → Fork, branch, commit, push, open PR
 
 **Contribution Guidelines:**
+
 1. Follow PEP 8 style guide
 2. Add type hints to functions
 3. Include docstrings for modules/classes
@@ -310,7 +325,8 @@ MIT License — see [LICENSE](LICENSE) file for details
 <div align="center">
 
 ### **Your Name**
-*Python Developer & AI Enthusiast*
+
+_Python Developer & AI Enthusiast_
 
 [![GitHub](https://img.shields.io/badge/GitHub-yourusername-181717?style=for-the-badge&logo=github)](https://github.com/yourusername)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-YourName-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
